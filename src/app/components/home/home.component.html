@@ -1,0 +1,9 @@
+<br><br>
+<button
+  [swal]="{ title: 'Delete you profile', text: 'Data will be losed  ', type: 'question', showCancelButton: true}"
+  (confirm)="saveEmail($event)"
+  (cancel)="handleRefusalToSetEmail($event)"
+  >
+  Set my e-mail address
+</button>
+<br>
